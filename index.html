@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Carla Store - Roupas Femininas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="#" class="brand">
+        <img src="ana-carla-store-logo.png" alt="Logo Ana Carla Store" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Ana Carla Store</span>
+          <span class="brand-tagline">Moda feminina & estilo</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#" class="nav-link active">Novidades</a>
+        <a href="#roupas" class="nav-link">Roupas</a>
+        <a href="#promocoes" class="nav-link">Promoções</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <button class="btn-icon" id="btnMenuMobile" aria-label="Abrir menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#" class="nav-link active">Novidades</a>
+    <a href="#roupas" class="nav-link">Roupas</a>
+    <a href="#promocoes" class="nav-link">Promoções</a>
+    <a href="#contato" class="nav-link">Contato</a>
+  </nav>
+
+  <!-- BANNER / HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>Bem-vinda à Ana Carla Store</h1>
+        <p>As melhores peças de moda feminina, com muito estilo e aquele atendimento de amiga.</p>
+        <a href="#roupas" class="btn-primary">Ver coleções</a>
+      </div>
+      <div class="hero-highlight">
+        <span>Frete grátis</span>
+        <small>em pedidos acima de R$ 199,90*</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS / BUSCA -->
+  <section class="filters" id="roupas">
+    <div class="container">
+      <div class="filters-top">
+        <h2>Roupas femininas</h2>
+        <span class="badge">Coleção atual</span>
+      </div>
+
+      <div class="filters-grid">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar por peça, cor, estilo..."
+          />
+        </div>
+
+        <div class="chips">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="vestido">Vestidos</button>
+          <button class="chip" data-filter="conjunto">Conjuntos</button>
+          <button class="chip" data-filter="cropped">Cropped</button>
+          <button class="chip" data-filter="calca">Calças</button>
+        </div>
+
+        <div class="sort">
+          <label for="sortSelect">Ordenar por:</label>
+          <select id="sortSelect">
+            <option value="padrao">Padrão</option>
+            <option value="menor-preco">Menor preço</option>
+            <option value="maior-preco">Maior preço</option>
+            <option value="nome-az">Nome A-Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA DE PRODUTOS -->
+  <main class="products-section">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <!-- Cada card de produto -->
+        <article class="product-card" data-category="vestido" data-name="Vestido Midi Floral" data-price="159.90">
+          <span class="product-badge">Novo</span>
+          <img src="https://via.placeholder.com/400x500?text=Vestido+Floral" alt="Vestido Midi Floral" class="product-image" />
+          <div class="product-info">
+            <h3>Vestido Midi Floral</h3>
+            <p class="product-desc">Vestido leve com estampa floral, ideal para o dia a dia.</p>
+            <div class="product-price-area">
+              <span class="price">R$ 159,90</span>
+              <span class="installments">3x de R$ 53,30</span>
+            </div>
+            <button class="btn-secondary btn-add-cart">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="conjunto" data-name="Conjunto Cropped & Saia" data-price="199.90">
+          <span class="product-badge promo">-20%</span>
+          <img src="https://via.placeholder.com/400x500?text=Conjunto+Cropped+Saia" alt="Conjunto Cropped & Saia" class="product-image" />
+          <div class="product-info">
+            <h3>Conjunto Cropped &amp; Saia</h3>
+            <p class="product-desc">Conjunto estiloso para arrasar na noite.</p>
+            <div class="product-price-area">
+              <span class="price">R$ 199,90</span>
+              <span class="old-price">R$ 249,90</span>
+            </div>
+            <button class="btn-secondary btn-add-cart">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="cropped" data-name="Cropped Preto Básico" data-price="79.90">
+          <img src="https://via.placeholder.com/400x500?text=Cropped+Preto" alt="Cropped Preto Básico" class="product-image" />
+          <div class="product-info">
+            <h3>Cropped Preto Básico</h3>
+            <p class="product-desc">Peça curinga para qualquer look.</p>
+            <div class="product-price-area">
+              <span class="price">R$ 79,90</span>
+              <span class="installments">2x de R$ 39,95</span>
+            </div>
+            <button class="btn-secondary btn-add-cart">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="calca" data-name="Calça Wide Leg Jeans" data-price="189.90">
+          <img src="https://via.placeholder.com/400x500?text=Calca+Wide+Leg" alt="Calça Wide Leg Jeans" class="product-image" />
+          <div class="product-info">
+            <h3>Calça Wide Leg Jeans</h3>
+            <p class="product-desc">Modelagem moderna e confortável.</p>
+            <div class="product-price-area">
+              <span class="price">R$ 189,90</span>
+              <span class="installments">4x de R$ 47,48</span>
+            </div>
+            <button class="btn-secondary btn-add-cart">Comprar</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="vestido" data-name="Vestido Curto Liso" data-price="129.90">
+          <img src="https://via.placeholder.com/400x500?text=Vestido+Curto" alt="Vestido Curto Liso" class="product-image" />
+          <div class="product-info">
+            <h3>Vestido Curto Liso</h3>
+            <p class="product-desc">Perfeito para o fim de semana.</p>
+            <div class="product-price-area">
+              <span class="price">R$ 129,90</span>
+              <span class="installments">3x de R$ 43,30</span>
+            </div>
+            <button class="btn-secondary btn-add-cart">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- BARRA DE MINI-CARRINHO -->
+  <aside class="mini-cart" id="miniCart">
+    <div class="mini-cart-header">
+      <h3>Minha sacola</h3>
+      <button id="miniCartClose" class="btn-icon">✕</button>
+    </div>
+    <div class="mini-cart-body" id="miniCartItems">
+      <p class="mini-cart-empty">Nenhum item ainda. Comece escolhendo seu look! 💖</p>
+    </div>
+    <div class="mini-cart-footer">
+      <div class="mini-cart-total">
+        <span>Total:</span>
+        <strong id="miniCartTotal">R$ 0,00</strong>
+      </div>
+      <button class="btn-primary btn-full">Finalizar pelo WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- BOTÃO FLOTANTE DO CARRINHO -->
+  <button class="floating-cart" id="floatingCartBtn">
+    🛒 <span id="cartCount">0</span>
+  </button>
+
+  <!-- RODAPÉ -->
+  <footer class="footer" id="contato">
+    <div class="container footer-content">
+      <div>
+        <h4>Ana Carla Store</h4>
+        <p>Moda feminina, looks do dia e muito estilo.</p>
+        <p><strong>Atendimento:</strong> WhatsApp & Instagram</p>
+      </div>
+      <div>
+        <h4>Redes sociais</h4>
+        <p>@anacarlastore (exemplo)</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>E-mail: contato@anacarlastore.com.br (exemplo)</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yearSpan"></span> Ana Carla Store - Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
